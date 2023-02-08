@@ -63,7 +63,7 @@ public class AppTest {
 
 			// Transmitir
 			Transport.send(message);
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 
 		} catch (Exception e) {
 			e.printStackTrace();
