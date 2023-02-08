@@ -21,11 +21,8 @@ public class AppTest {
 	@Test
 	public void testeEmail() {
 
-//		final String user = JOptionPane.showInputDialog("Name User");
-//		final String password = JOptionPane.showInputDialog("Password");
-
-		final String user = "josivandevjava@gmail.com";
-		final String password = "@lpH@057";
+		final String user = JOptionPane.showInputDialog("Name User");
+		final String password = JOptionPane.showInputDialog("Password");
 
 		try {
 			Properties properties = new Properties();
