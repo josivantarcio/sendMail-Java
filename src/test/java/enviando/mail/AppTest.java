@@ -31,6 +31,9 @@ public class AppTest {
 			Properties properties = new Properties();
 
 			properties.put("mail.smtp.ssl.trust", "*"); 
+			
+			properties.put("mail.smtp.ssl.checkserveridentity", "true");
+			
 			properties.put("mail.smtp.auth", "true"); /* Autorizacao */
 			properties.put("mail.smtp.starttls", "true"); /* Autenticação */
 			properties.put("mail.smtp.host", "smtp.gmail.com"); /* servidor de email Gmail */
