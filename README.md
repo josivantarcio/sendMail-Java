@@ -1,61 +1,61 @@
-# Projeto de Envio de Email com Java
+# Java Email Sending Project
 
-Este é um projeto simples que demonstra como enviar emails utilizando Java 17 LTS, Spring, Postman e H2.
+This is a simple project demonstrating how to send emails using Java 17 LTS, Spring, Postman, and H2.
 
 ![Java](https://img.shields.io/badge/Java-17_LTS-blue)
 ![Spring](https://img.shields.io/badge/Spring-5.0-green)
 ![Postman](https://img.shields.io/badge/Postman-Collection-orange)
 ![H2](https://img.shields.io/badge/H2-Database-yellow)
 
-## Descrição
+## Description
 
-Este projeto utiliza Spring Boot para criar um serviço que permite o envio de emails através de uma API RESTful. O H2 é utilizado como banco de dados em memória para armazenar os registros de envio de emails.
+This project utilizes Spring Boot to create a service that allows sending emails via a RESTful API. H2 is used as an in-memory database to store email sending records.
 
-## Pré-requisitos
+## Prerequisites
 
-- JDK 17 LTS instalado
-- Maven 3.x instalado
-- Postman (para testar a API)
+- JDK 17 LTS installed
+- Maven 3.x installed
+- Postman (for testing the API)
 
-## Configuração
+## Configuration
 
-1. Clone o repositório:
+1. Clone the repository:
    ```
    git clone https://github.com/josivantarcio/sendMail-Java.git
    ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
    ```
    cd sendMail-Java
    ```
 
-3. Execute o projeto usando Maven:
+3. Run the project using Maven:
    ```
    mvn spring-boot:run
    ```
 
-## Uso
+## Usage
 
-1. Utilize o Postman ou qualquer outra ferramenta para enviar requisições HTTP para o endpoint da API:
+1. Use Postman or any other tool to send HTTP requests to the API endpoint:
    ```
    POST http://localhost:8080/api/send-email
    ```
 
-   Exemplo de corpo da requisição:
+   Example request body:
    ```json
    {
-       "to": "destinatario@example.com",
-       "subject": "Assunto do Email",
-       "body": "Conteúdo do Email"
+       "to": "recipient@example.com",
+       "subject": "Email Subject",
+       "body": "Email Content"
    }
    ```
 
-2. Verifique o console do Spring Boot para ver logs de envio de emails e confirmações do banco de dados H2.
+2. Check the Spring Boot console for email sending logs and H2 database confirmations.
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou reportar issues.
+Contributions are welcome! Feel free to open a pull request or report issues.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
